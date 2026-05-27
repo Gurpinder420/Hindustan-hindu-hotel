@@ -50,6 +50,7 @@ body {
   overflow-x: hidden;
   line-height: 1.7;
 }
+html, body { overflow-x: hidden; }
 img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; transition: var(--transition); }
 ul { list-style: none; }
@@ -2340,6 +2341,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   .btn { width: 100%; max-width: 280px; justify-content: center; }
   .intro-features, .about-images-mosaic{display: flex; flex-direction: column; gap: 10px; }
   .none {display: none;}
+  .hours-item{display:flex;flex-direction:column;}
    .masonry-grid { columns: 1; }
   .menu-tabs { gap: 8px; }
   .menu-tab-btn { font-size: 0.8rem; padding: 8px 16px; }
