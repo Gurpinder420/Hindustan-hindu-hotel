@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu – Hindustan Hindu Hotel</title>
+  <meta name="description" content="Explore our vast menu of authentic Indian dishes — veg, non-veg, biryani, tandoor, and more." />
+ <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- =========== NAVIGATION =========== -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+   <div class="nav-logo-text">
+      <span class="brand-name">Hindustan Hindu Hotel</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="/index.html" class="active">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/menu.html">Menu</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/contact.html" class="nav-reserve-btn">Reserve Table</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/menu.html">Menu</a>
+  <a href="/gallery.html">Gallery</a>
+  <a href="/contact.html">Contact</a>
+  <a href="/contact.html" class="nav-reserve-btn" style="margin-top:10px;padding:12px 30px!important;font-size:0.95rem!important;">Reserve a Table</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('/images/gulabjamun-with-rabri.webp');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="section-tag"><i class="fas fa-book-open"></i> Our Menu</div>
+    <h1>Authentic <span>Indian Cuisine</span></h1>
+    <p>A curated selection of over 200 dishes spanning all corners of India's rich culinary map</p>
+    <div class="breadcrumb">
+      <a href="/index.html">Home</a>
+      <i class="fas fa-chevron-right"></i>
+      <span>Menu</span>
+    </div>
+  </div>
+</div>
+
+<!-- MENU SECTION -->
+<section class="menu-section">
+  <!-- Tabs -->
+  <div class="menu-tabs" data-anim="up">
+        <button class="menu-tab-btn " data-target="all">ALL</button>
+    <button class="menu-tab-btn active" data-target="cat-punjabi-veg">Punjabi Veg</button>
+    <button class="menu-tab-btn" data-target="cat-paneer">Paneer Special</button>
+    <button class="menu-tab-btn" data-target="cat-dal">Dal & Curry</button>
+    <button class="menu-tab-btn" data-target="cat-south">South Indian</button>
+    <button class="menu-tab-btn" data-target="cat-chinese-veg">Chinese Veg</button>
+    <button class="menu-tab-btn" data-target="cat-tandoori-veg">Tandoori Veg</button>
+    <button class="menu-tab-btn" data-target="cat-breads">Indian Breads</button>
+    <button class="menu-tab-btn" data-target="cat-rice-veg">Rice & Veg Biryani</button>
+    <button class="menu-tab-btn" data-target="cat-soups-veg">Soups Veg</button>
+    <button class="menu-tab-btn" data-target="cat-snacks">Snacks & Starters</button>
+    <button class="menu-tab-btn" data-target="cat-desserts">Desserts</button>
+    <button class="menu-tab-btn" data-target="cat-beverages">Beverages</button>
+    <button class="menu-tab-btn" data-target="cat-butter-chicken">Butter Chicken</button>
+    <button class="menu-tab-btn" data-target="cat-tandoori-chicken">Tandoori Chicken</button>
+    <button class="menu-tab-btn" data-target="cat-mughlai">Mughlai</button>
+    <button class="menu-tab-btn" data-target="cat-fish">Fish Specials</button>
+    <button class="menu-tab-btn" data-target="cat-mutton">Mutton</button>
+    <button class="menu-tab-btn" data-target="cat-chicken-biryani">Chicken Biryani</button>
+    <button class="menu-tab-btn" data-target="cat-egg">Egg Dishes</button>
+    <button class="menu-tab-btn" data-target="cat-kebabs">Kebabs</button>
+  </div>
+
+  <!-- ===== VEG CATEGORIES ===== -->
+
+  <!-- Punjabi Veg -->
+  <div class="menu-category active" id="cat-punjabi-veg">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#22a722;"><i class="fas fa-leaf"></i> Pure Vegetarian</div>
+      <h2 class="menu-category-title">Punjabi <span>Veg Dishes</span></h2>
+      <p style="color:var(--text-light); font-size:0.9rem; max-width:500px; margin:0 auto;">Bold, hearty flavors from the heart of Punjab — the land of butter, cream, and robust spices</p>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up">
+        <div class="menu-item-img-wrap">
+          <img src="./images/aloo-gobi-masala.jpg" alt="Aloo Gobi" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Aloo Gobi Masala</div>
+            <div class="menu-item-price">₹190</div>
+          </div>
+          <p class="menu-item-desc">Potato and cauliflower cooked in a spiced onion-tomato gravy with traditional Punjabi masalas.</p>
+          <div class="menu-item-footer">
+            <span class="menu-item-tag">Punjabi · Medium Spicy</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item-card" data-anim="up" data-delay="80">
+        <div class="menu-item-img-wrap">
+          <img src="./images/chole-bhature.webp" alt="Chole Bhature" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Chole Bhature</div>
+            <div class="menu-item-price">₹170</div>
+          </div>
+          <p class="menu-item-desc">Spiced chickpea curry served with fluffy deep-fried bread — the iconic Punjabi street food at its finest.</p>
+          <div class="menu-item-footer">
+            <span class="menu-item-tag">Street Food · Spicy</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item-card" data-anim="up" data-delay="160">
+        <div class="menu-item-img-wrap">
+          <img src="./images/rajma-rice.jpg" alt="Rajma Chawal" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Rajma Chawal</div>
+            <div class="menu-item-price">₹200</div>
+          </div>
+          <p class="menu-item-desc">Kidney beans in thick spiced gravy served with steamed basmati rice — Punjabi comfort food at its best.</p>
+          <div class="menu-item-footer">
+            <span class="menu-item-tag">Comfort Food · Mild</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item-card" data-anim="up" data-delay="240">
+        <div class="menu-item-img-wrap">
+          <img src="./images/palak-paneer.jpg" alt="Palak Paneer" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Palak Paneer</div>
+            <div class="menu-item-price">₹230</div>
+          </div>
+          <p class="menu-item-desc">Fresh spinach puree with paneer cubes in a creamy spiced gravy. Nutritious and delicious.</p>
+          <div class="menu-item-footer">
+            <span class="menu-item-tag">Healthy · Medium</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item-card" data-anim="up" data-delay="320">
+        <div class="menu-item-img-wrap">
+          <img src="./images/dal-makhni.jpg" alt="Dal Makhni" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Maa Ki Dal (Dal Makhani)</div>
+            <div class="menu-item-price">₹220</div>
+          </div>
+          <p class="menu-item-desc">Slow-cooked overnight black lentils with butter and cream. The pride of Punjabi cuisine.</p>
+          <div class="menu-item-footer">
+            <span class="menu-item-tag">Heritage · Rich</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item-card" data-anim="up" data-delay="400">
+        <div class="menu-item-img-wrap">
+          <img src="./images/kadhi-pakoda.jpg" alt="Kadhi Pakora" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Kadhi Pakora</div>
+            <div class="menu-item-price">₹180</div>
+          </div>
+          <p class="menu-item-desc">Tangy yogurt-based curry with golden fried besan fritters — a Punjabi grandmother's favorite recipe.</p>
+          <div class="menu-item-footer">
+            <span class="menu-item-tag">Traditional · Tangy</span>
+          </div>
+        </div>
+      </div>
+        <div class="menu-item-card" data-anim="up" data-delay="80">
+        <div class="menu-item-img-wrap">
+          <img src="./images/paneer-butter-masala.jpg" alt="Paneer Butter Masala" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Paneer Butter Masala</div>
+            <div class="menu-item-price">₹170</div>
+          </div>
+          <p class="menu-item-desc">Soft cottage cheese cubes simmered in a rich, buttery, and creamy tomato gravy with mild spices.</p>
+          <div class="menu-item-footer">
+            <span class="menu-item-tag">Street Food · Spicy</span>
+          </div>
+        </div>
+      </div>
+        <div class="menu-item-card" data-anim="up" data-delay="80">
+        <div class="menu-item-img-wrap">
+          <img src="./images/allo-prantha.jpg" alt="Allo Prantha" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Allo Prantha</div>
+            <div class="menu-item-price">₹170</div>
+          </div>
+          <p class="menu-item-desc">Golden, crispy whole wheat flatbread stuffed with a spiced mashed potato filling — the ultimate comforting Punjabi breakfast classic.</p>
+          <div class="menu-item-footer">
+            <span class="menu-item-tag">Street Food · Spicy</span>
+          </div>
+        </div>
+      </div>
+        <div class="menu-item-card" data-anim="up" data-delay="80">
+        <div class="menu-item-img-wrap">
+          <img src="./images/Gajar-Ka-Halwa.jpg" alt="Gajar Ka Halwa" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Gajar Ka Halwa</div>
+            <div class="menu-item-price">₹170</div>
+          </div>
+          <p class="menu-item-desc">Rich, slow-cooked grated carrot pudding simmered in full-cream milk, sweetened with sugar, and loaded with aromatic cardamom, khoya, and crunchy roasted nuts.</p>
+          <div class="menu-item-footer">
+            <span class="menu-item-tag">Street Food · Spicy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paneer Special -->
+  <div class="menu-category" id="cat-paneer">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#22a722;"><i class="fas fa-cheese"></i> Paneer Specials</div>
+      <h2 class="menu-category-title">Paneer <span>Creations</span></h2>
+      <p style="color:var(--text-light); font-size:0.9rem; max-width:500px; margin:0 auto;">Exquisite cottage cheese dishes showcasing India's finest vegetarian culinary artistry</p>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up">
+        <div class="menu-item-img-wrap">
+          <img src="./images/paneer-tikka-masala.jpg" alt="Paneer Tikka Masala" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Paneer Tikka Masala</div>
+            <div class="menu-item-price">₹280</div>
+          </div>
+          <p class="menu-item-desc">Tandoor-grilled paneer cubes in vibrant masala gravy. Our most-ordered paneer dish.</p>
+          <div class="menu-item-footer"><span class="menu-item-tag">Chef's Pick · Medium</span></div>
+        </div>
+      </div>
+      <div class="menu-item-card" data-anim="up" data-delay="80">
+        <div class="menu-item-img-wrap">
+          <img src="./images/shahipaneer.jpg" alt="Shahi Paneer" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Shahi Paneer</div>
+            <div class="menu-item-price">₹260</div>
+          </div>
+          <p class="menu-item-desc">Cottage cheese in rich cashew-cream Mughlai gravy with subtle saffron aroma. A royal indulgence.</p>
+          <div class="menu-item-footer"><span class="menu-item-tag">Mughlai · Rich & Creamy</span></div>
+        </div>
+      </div>
+      <div class="menu-item-card" data-anim="up" data-delay="160">
+        <div class="menu-item-img-wrap">
+          <img src="./images/palak-paneer.jpg" alt="Palak Paneer" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Palak Paneer</div>
+            <div class="menu-item-price">₹250</div>
+          </div>
+          <p class="menu-item-desc">Soft paneer cubes in a vibrant spinach gravy — healthy, flavorful, and deeply satisfying.</p>
+          <div class="menu-item-footer"><span class="menu-item-tag">Healthy · Mild</span></div>
+        </div>
+      </div>
+      <div class="menu-item-card" data-anim="up" data-delay="240">
+        <div class="menu-item-img-wrap">
+          <img src="./images/paneer-butter-masala.jpg" alt="Paneer Butter Masala" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Paneer Butter Masala</div>
+            <div class="menu-item-price">₹270</div>
+          </div>
+          <p class="menu-item-desc">The vegetarian counterpart of Butter Chicken — paneer in a velvety, buttery tomato sauce.</p>
+          <div class="menu-item-footer"><span class="menu-item-tag">Bestseller · Mild</span></div>
+        </div>
+      </div>
+      <div class="menu-item-card" data-anim="up" data-delay="320">
+        <div class="menu-item-img-wrap">
+          <img src="./images/paneer-lababdar.jpg" alt="Paneer Lababdar" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Paneer Lababdar</div>
+            <div class="menu-item-price">₹290</div>
+          </div>
+          <p class="menu-item-desc">Cottage cheese in a tangy onion-tomato base with bell peppers and freshly roasted spices.</p>
+          <div class="menu-item-footer"><span class="menu-item-tag">Spicy · Bold</span></div>
+        </div>
+      </div>
+      <div class="menu-item-card" data-anim="up" data-delay="400">
+        <div class="menu-item-img-wrap">
+          <img src="./images/kadai-paneer.jpg" alt="Kadai Paneer" loading="lazy" class="menu-item-img" />
+          <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+        </div>
+        <div class="menu-item-body">
+          <div class="menu-item-top">
+            <div class="menu-item-name">Kadai Paneer</div>
+            <div class="menu-item-price">₹265</div>
+          </div>
+          <p class="menu-item-desc">Paneer and capsicum cooked in a kadai (wok) with freshly ground masala. Fiery and aromatic.</p>
+          <div class="menu-item-footer"><span class="menu-item-tag">Traditional · Spicy</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dal & Curry -->
+  <div class="menu-category" id="cat-dal">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#22a722;"><i class="fas fa-bowl-food"></i> Dal & Curry</div>
+      <h2 class="menu-category-title">Dal & <span>Curry Specials</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/dal-makhni.jpg" alt="Dal Makhani" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Dal Makhani</div><div class="menu-item-price">₹220</div></div><p class="menu-item-desc">Overnight slow-cooked black lentils with butter and cream. The king of Indian dal preparations.</p><div class="menu-item-footer"><span class="menu-item-tag">Heritage · Rich</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/dal-tadk.jpeg" alt="Dal Tadka" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Dal Tadka</div><div class="menu-item-price">₹180</div></div><p class="menu-item-desc">Yellow lentils tempered with cumin, garlic, red chillies and ghee — a comforting everyday classic.</p><div class="menu-item-footer"><span class="menu-item-tag">Comfort · Medium</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/sambar.jpg" alt="Sambar" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Sambar</div><div class="menu-item-price">₹150</div></div><p class="menu-item-desc">South Indian lentil soup with tamarind, vegetables, and the signature sambar spice blend.</p><div class="menu-item-footer"><span class="menu-item-tag">South Indian · Tangy</span></div></div></div>
+       <div class="menu-item-card" data-anim="up" data-delay="240"><div class="menu-item-img-wrap"><img src="./images/mix-veg-curry.jpg" alt="Mix Veg Curry" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Mix Veg Curry</div><div class="menu-item-price">₹200</div></div><p class="menu-item-desc">Seasonal vegetables cooked in a spiced tomato-onion gravy — wholesome and colorful.</p><div class="menu-item-footer"><span class="menu-item-tag">Nutritious · Mild</span></div></div></div>
+     </div>
+  </div>
+  <!-- South Indian -->
+  <div class="menu-category" id="cat-south">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#22a722;"><i class="fas fa-sun"></i> South Indian</div>
+      <h2 class="menu-category-title">South <span>Indian Delights</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/Masala-Dosa.jpg" alt="Masala Dosa" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Masala Dosa</div><div class="menu-item-price">₹160</div></div><p class="menu-item-desc">Crispy fermented rice crepe filled with spiced potato masala, served with chutneys and sambar.</p><div class="menu-item-footer"><span class="menu-item-tag">Classic · Crispy</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/Idli.jpg" alt="Idli Sambar" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Idli Sambar</div><div class="menu-item-price">₹130</div></div><p class="menu-item-desc">Steamed rice cakes served with tangy sambar and three chutneys — light, healthy, and delicious.</p><div class="menu-item-footer"><span class="menu-item-tag">Healthy · Light</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/vagetable-uttpam.jpg" alt="Uttapam" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Vegetable Uttapam</div><div class="menu-item-price">₹150</div></div><p class="menu-item-desc">Thick fermented rice pancake topped with colorful vegetables and coconut chutney.</p><div class="menu-item-footer"><span class="menu-item-tag">South Indian · Filling</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="240"><div class="menu-item-img-wrap"><img src="./images/medu-vada.jpg" alt="Medu Vada" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Medu Vada</div><div class="menu-item-price">₹120</div></div><p class="menu-item-desc">Crispy lentil fritters with a soft center, served with coconut chutney and sambar.</p><div class="menu-item-footer"><span class="menu-item-tag">Crunchy · Popular</span></div></div></div>
+   <div class="menu-item-card" data-anim="up" data-delay="180">
+  <div class="menu-item-img-wrap">
+    <img src="./images/upma.jpg" alt="Upma" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap">
+      <span class="veg-badge">Veg</span>
+    </div>
+  </div>
+
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">South Indian Upma</div>
+      <div class="menu-item-price">₹120</div>
+    </div>
+
+    <p class="menu-item-desc">
+      Soft roasted semolina cooked with mustard seeds, curry leaves, and fresh vegetables.
+    </p>
+
+    <div class="menu-item-footer">
+      <span class="menu-item-tag">South Indian · Light</span>
+    </div>
+  </div>
+</div>
+
+<div class="menu-item-card" data-anim="up" data-delay="200">
+  <div class="menu-item-img-wrap">
+    <img src="./images/yellow-rice.webp" alt="Yellow Rice" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap">
+      <span class="veg-badge">Veg</span>
+    </div>
+  </div>
+
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Traditional Yellow Rice</div>
+      <div class="menu-item-price">₹140</div>
+    </div>
+
+    <p class="menu-item-desc">
+      Fragrant turmeric-infused rice prepared with mild spices, peas, and aromatic herbs.
+    </p>
+
+    <div class="menu-item-footer">
+      <span class="menu-item-tag">Indian Rice · Flavorful</span>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <!-- Chinese Veg -->
+  <div class="menu-category" id="cat-chinese-veg">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#22a722;"><i class="fas fa-chopsticks"></i> Indo-Chinese</div>
+      <h2 class="menu-category-title">Chinese <span>Veg Dishes</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/veg-manchurian.jpg" alt="Veg Manchurian" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Veg Manchurian</div><div class="menu-item-price">₹200</div></div><p class="menu-item-desc">Crispy vegetable dumplings in a tangy soy-chili sauce — the iconic Indian-Chinese fusion dish.</p><div class="menu-item-footer"><span class="menu-item-tag">Indo-Chinese · Spicy</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/veg-fried-ric.jpeg" alt="Fried Rice" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Veg Fried Rice</div><div class="menu-item-price">₹180</div></div><p class="menu-item-desc">Stir-fried rice with seasonal vegetables, soy sauce, and aromatic spices. Light and satisfying.</p><div class="menu-item-footer"><span class="menu-item-tag">Popular · Medium</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/veg-hakka-noodles.jpg" alt="Hakka Noodles" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Veg Hakka Noodles</div><div class="menu-item-price">₹190</div></div><p class="menu-item-desc">Stir-fried noodles with crunchy vegetables in a savory sauce with a hint of chili.</p><div class="menu-item-footer"><span class="menu-item-tag">Indo-Chinese · Crunchy</span></div></div></div>
+      <!-- Burger Card -->
+<div class="menu-item-card" data-anim="up" data-delay="180">
+  <div class="menu-item-img-wrap">
+    <img src="./images/burger.jpg" alt="Crispy Veg Burger" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Crispy Veg Burger</div>
+      <div class="menu-item-price">₹140</div>
+    </div>
+    <p class="menu-item-desc">A crunchy mixed-veg patty topped with fresh lettuce, onions, and creamy signature sauce in a toasted bun.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Classic · Crunchy</span></div>
+  </div>
+</div>
+
+<!-- Pasta Card -->
+<div class="menu-item-card" data-anim="up" data-delay="200">
+  <div class="menu-item-img-wrap">
+    <img src="./images/pasta.jpeg" alt="White Sauce Pasta" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Creamy White Pasta</div>
+      <div class="menu-item-price">₹220</div>
+    </div>
+    <p class="menu-item-desc">Penne pasta tossed in a rich, velvety Alfredo sauce with sweet corn, bell peppers, and Italian herbs.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Italian · Creamy</span></div>
+  </div>
+</div>
+
+<!-- Aloo Tikki Card -->
+<div class="menu-item-card" data-anim="up" data-delay="220">
+  <div class="menu-item-img-wrap">
+    <img src="./images/aloo-tikki.jpg" alt="Aloo Tikki Chaat" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Crispy Aloo Tikki</div>
+      <div class="menu-item-price">₹90</div>
+    </div>
+    <p class="menu-item-desc">Golden-fried potato patties served with sweet yogurt, tangy tamarind, and spicy mint chutneys.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Street Food · Tangy</span></div>
+  </div>
+</div>
+
+<!-- Pav Bhaji Card -->
+<div class="menu-item-card" data-anim="up" data-delay="240">
+  <div class="menu-item-img-wrap">
+    <img src="./images/Pav-Bhaji.jpg" alt="Special Pav Bhaji" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Special Pav Bhaji</div>
+      <div class="menu-item-price">₹160</div>
+    </div>
+    <p class="menu-item-desc">A spicy, mashed mixed-vegetable curry loaded with butter, served alongside soft, toasted pav buns.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Mumbai Style · Spicy</span></div>
+  </div>
+</div>
+
+<!-- Pizza Card -->
+<div class="menu-item-card" data-anim="up" data-delay="260">
+  <div class="menu-item-img-wrap">
+    <img src="./images/pizza.jpeg" alt="Pizza" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Pizza</div>
+      <div class="menu-item-price">₹280</div>
+    </div>
+    <p class="menu-item-desc">Authentic hand-tossed crust topped with rich tomato sauce, premium mozzarella cheese, and fresh basil leaves.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Cheesy · Classic</span></div>
+  </div>
+</div>
+
+<!-- Sandwich Card -->
+<div class="menu-item-card" data-anim="up" data-delay="280">
+  <div class="menu-item-img-wrap">
+    <img src="./images/sandwich.jpg" alt="Grilled Cheese Sandwich" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Grilled Corn & Cheese</div>
+      <div class="menu-item-price">₹120</div>
+    </div>
+    <p class="menu-item-desc">Perfectly grilled golden bread stuffed with sweet corn, gooey melted cheese, and a pinch of black pepper.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Toasted · Cheesy</span></div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <!-- Tandoori Veg -->
+  <div class="menu-category" id="cat-tandoori-veg">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#22a722;"><i class="fas fa-fire"></i> From Our Tandoor</div>
+      <h2 class="menu-category-title">Tandoori <span>Veg Specials</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/paneer-tikka.webp" alt="Paneer Tikka" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Paneer Tikka</div><div class="menu-item-price">₹260</div></div><p class="menu-item-desc">Marinated cottage cheese grilled in tandoor. Smoky, charred exterior with tender interior.</p><div class="menu-item-footer"><span class="menu-item-tag">Tandoor · Smoky</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/veg-seekh-keba.jpeg" alt="Veg Seekh Kebab" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Veg Seekh Kebab</div><div class="menu-item-price">₹220</div></div><p class="menu-item-desc">Skewered minced vegetable kebabs grilled over charcoal, served with mint chutney.</p><div class="menu-item-footer"><span class="menu-item-tag">Grilled · Healthy</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/mushroom-tikka.jpg" alt="Mushroom Tikka" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Mushroom Tikka</div><div class="menu-item-price">₹240</div></div><p class="menu-item-desc">Marinated mushroom caps grilled in the tandoor with aromatic spices and herb butter.</p><div class="menu-item-footer"><span class="menu-item-tag">Earthy · Smoky</span></div></div></div>
+      <!-- Malai Chaap Card -->
+<div class="menu-item-card" data-anim="up" data-delay="300">
+  <div class="menu-item-img-wrap">
+    <img src="./images/malai-champ.jpg" alt="Malai Chaap" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Tandoori Malai Chaap</div>
+      <div class="menu-item-price">₹210</div>
+    </div>
+    <p class="menu-item-desc">Soya chaap marinated in a rich mixture of fresh cream, yogurt, cashew paste, and mild spices, grilled to perfection.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Tandoori · Creamy</span></div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <!-- Indian Breads -->
+  <div class="menu-category" id="cat-breads">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:var(--orange);"><i class="fas fa-bread-slice"></i> From The Tandoor</div>
+      <h2 class="menu-category-title">Indian <span>Breads</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/garlic-naan.jpg" alt="Garlic Naan" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Garlic Naan</div><div class="menu-item-price">₹60</div></div><p class="menu-item-desc">Soft leavened bread baked in tandoor, topped with roasted garlic and fresh butter.</p><div class="menu-item-footer"><span class="menu-item-tag">Bestseller · Fluffy</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/butter-naan.jpg" alt="Butter Naan" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Butter Naan</div><div class="menu-item-price">₹50</div></div><p class="menu-item-desc">Classic Indian flatbread baked in a clay tandoor, slathered with fresh white butter.</p><div class="menu-item-footer"><span class="menu-item-tag">Classic · Soft</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/lachha-prantha.jpg" alt="Laccha Paratha" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Laccha Paratha</div><div class="menu-item-price">₹70</div></div><p class="menu-item-desc">Multi-layered flaky whole wheat bread with a crispy exterior and soft flaky layers inside.</p><div class="menu-item-footer"><span class="menu-item-tag">Flaky · Whole Wheat</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="240"><div class="menu-item-img-wrap"><img src="./images/missi-roti.jpg" alt="Missi Roti" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Missi Roti</div><div class="menu-item-price">₹55</div></div><p class="menu-item-desc">Spiced gram flour and wheat flatbread — a rustic Rajasthani bread full of character.</p><div class="menu-item-footer"><span class="menu-item-tag">Rustic · Spiced</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="320"><div class="menu-item-img-wrap"><img src="./images/allo-prantha.jpg" alt="Stuffed Paratha" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Stuffed Aloo Paratha</div><div class="menu-item-price">₹90</div></div><p class="menu-item-desc">Whole wheat flatbread stuffed with spiced mashed potato, cooked on a griddle with ghee. Served with lassi.</p><div class="menu-item-footer"><span class="menu-item-tag">Punjabi Classic · Filling</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- Rice & Veg Biryani -->
+  <div class="menu-category" id="cat-rice-veg">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:var(--orange);"><i class="fas fa-bowl-rice"></i> Biryani & Rice</div>
+      <h2 class="menu-category-title">Rice & <span>Veg Biryani</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/Veg-Dum-Biryani.jpg" alt="Veg Dum Biryani" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Veg Dum Biryani</div><div class="menu-item-price">₹240</div></div><p class="menu-item-desc">Aromatic long-grain basmati rice layered with vegetables, saffron, and sealed with dough for dum cooking.</p><div class="menu-item-footer"><span class="menu-item-tag">Dum Cooked · Aromatic</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/Paneer-Biryani.webp" alt="Paneer Biryani" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Paneer Biryani</div><div class="menu-item-price">₹260</div></div><p class="menu-item-desc">Fragrant basmati rice cooked with marinated paneer, whole spices, and caramelized onions.</p><div class="menu-item-footer"><span class="menu-item-tag">Premium · Fragrant</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/Jeera-ric.jpeg" alt="Jeera Rice" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Jeera Rice</div><div class="menu-item-price">₹140</div></div><p class="menu-item-desc">Steamed basmati rice tempered with cumin seeds and ghee — the perfect accompaniment to any curry.</p><div class="menu-item-footer"><span class="menu-item-tag">Simple · Aromatic</span></div></div></div>
+      <!-- Hyderabadi Veg Biryani Card -->
+<div class="menu-item-card" data-anim="up" data-delay="320">
+  <div class="menu-item-img-wrap">
+    <img src="./images/hydrabadi-veg-biryani.jpg" alt="Hyderabadi Veg Biryani" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Hyderabadi Veg Biryani</div>
+      <div class="menu-item-price">₹240</div>
+    </div>
+    <p class="menu-item-desc">Fragrant, long-grain basmati rice layered with marinated vegetables, aromatic spices, saffron, and fresh mint, slow-cooked on dum.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Dum Cooked · Aromatic</span></div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <!-- Soups Veg -->
+  <div class="menu-category" id="cat-soups-veg">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#22a722;"><i class="fas fa-mug-hot"></i> Hot Soups</div>
+      <h2 class="menu-category-title">Veg <span>Soups</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/veg-tomato-soup.jpg" alt="Tomato Soup" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Cream of Tomato Soup</div><div class="menu-item-price">₹120</div></div><p class="menu-item-desc">Velvety pureed tomato soup with cream, fresh basil, and a hint of pepper.</p><div class="menu-item-footer"><span class="menu-item-tag">Light · Warming</span></div></div></div>
+     <div class="menu-item-card" data-anim="up" data-delay="340">
+  <div class="menu-item-img-wrap">
+    <img src="./images/veg-manchow-sou.jpeg" alt="Veg Manchow Soup" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Veg Manchow Soup</div>
+      <div class="menu-item-price">₹130</div>
+    </div>
+    <p class="menu-item-desc">A comforting, spicy Indo-Chinese soup packed with finely chopped vegetables, ginger, garlic, and topped with crispy fried noodles.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Indo-Chinese · Spicy</span></div>
+  </div>
+</div> <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/veg-sweet-corn-soup.webp" alt="Sweet Corn Soup" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Sweet Corn Soup</div><div class="menu-item-price">₹140</div></div><p class="menu-item-desc">Thick, sweet corn-based soup with vegetables and a satisfying corn-starch texture.</p><div class="menu-item-footer"><span class="menu-item-tag">Sweet · Thick</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- Snacks & Starters -->
+  <div class="menu-category" id="cat-snacks">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:var(--orange);"><i class="fas fa-cookie"></i> Starters</div>
+      <h2 class="menu-category-title">Snacks & <span>Starters</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/samosa.avif" alt="Samosa" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Punjabi Samosa (2 pcs)</div><div class="menu-item-price">₹80</div></div><p class="menu-item-desc">Crispy pastry filled with spiced potato and peas, deep fried to golden perfection. Served with mint chutney.</p><div class="menu-item-footer"><span class="menu-item-tag">Street Food · Crispy</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/Onion-Pakora.jpg" alt="Onion Bhaji" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Onion Bhaji (Pakora)</div><div class="menu-item-price">₹100</div></div><p class="menu-item-desc">Crispy fried onion fritters in spiced gram flour batter. Perfect monsoon snack with masala chai.</p><div class="menu-item-footer"><span class="menu-item-tag">Crispy · Popular</span></div></div></div>
+     <div class="menu-item-card" data-anim="up" data-delay="360">
+  <div class="menu-item-img-wrap">
+    <img src="./images/aloo-tikki.jpg" alt="Aloo Tikki" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Crispy Aloo Tikki</div>
+      <div class="menu-item-price">₹90</div>
+    </div>
+    <p class="menu-item-desc">Kurkure aloo patties tho patu kammani perugu, teepi chintapandu mariyu podina chutneys mix chaat.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Street Food · Tangy</span></div>
+  </div>
+</div>
+
+<div class="menu-item-card" data-anim="up" data-delay="380">
+  <div class="menu-item-img-wrap">
+    <img src="./images/Pav-Bhaji.jpg" alt="Pav Bhaji" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Special Pav Bhaji</div>
+      <div class="menu-item-price">₹160</div>
+    </div>
+    <p class="menu-item-desc">Butter tho nindina spicy mixed vegetable curry, deenitho patu soft toasted pav buns labhistayi.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Mumbai Style · Spicy</span></div>
+  </div>
+</div>
+
+<div class="menu-item-card" data-anim="up" data-delay="400">
+  <div class="menu-item-img-wrap">
+    <img src="./images/Masala-Dosa.jpg" alt="Masala Dosa" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Mysore Masala Dosa</div>
+      <div class="menu-item-price">₹130</div>
+    </div>
+    <p class="menu-item-desc">Crispy golden crepe lona spicy aloo masala stuffing mariyu signature kempu chutney rasam.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">South Indian · Crispy</span></div>
+  </div>
+</div>
+
+<div class="menu-item-card" data-anim="up" data-delay="420">
+  <div class="menu-item-img-wrap">
+    <img src="./images/medu-vada.jpg" alt="Medu Vada" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Medu Vada (2 Pcs)</div>
+      <div class="menu-item-price">₹100</div>
+    </div>
+    <p class="menu-item-desc">Baita crunchy ga lona soft ga unde deep-fried minapa vada, sambar mariyu kobbari chutneytho serves chestaru.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Traditional · Crunchy</span></div>
+  </div>
+</div>
+
+<div class="menu-item-card" data-anim="up" data-delay="440">
+  <div class="menu-item-img-wrap">
+    <img src="./images/Idli.jpg" alt="Idli" loading="lazy" class="menu-item-img"/>
+    <div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Idli</div>
+      <div class="menu-item-price">₹90</div>
+    </div>
+    <p class="menu-item-desc">Malli puvvulanti soft steamed idleelu, pure ghee mariyu spicy aromatic gun powder (podi) tho mix chesi untayi.</p>
+    <div class="menu-item-footer"><span class="menu-item-tag">Healthy · Soft</span></div>
+  </div>
+</div></div>
+  </div>
+
+  <!-- Desserts -->
+  <div class="menu-category" id="cat-desserts">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:var(--gold);"><i class="fas fa-ice-cream"></i> Sweet Endings</div>
+      <h2 class="menu-category-title">Desserts & <span>Indian Sweets</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/gulabjamun-with-rabri.webp" alt="Gulab Jamun" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Gulab Jamun with Rabri</div><div class="menu-item-price">₹120</div></div><p class="menu-item-desc">Warm milk-solid dumplings in rose-flavored syrup with creamy rabri and pistachio.</p><div class="menu-item-footer"><span class="menu-item-tag">Classic · Sweet</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/rasmalai.jpg" alt="Rasmalai" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Rasmalai</div><div class="menu-item-price">₹140</div></div><p class="menu-item-desc">Soft cottage cheese discs soaked in sweetened saffron milk with cardamom and rose petals.</p><div class="menu-item-footer"><span class="menu-item-tag">Bengali · Delicate</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/Gajar-Ka-Halwa.jpg" alt="Gajar Halwa" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Gajar Halwa</div><div class="menu-item-price">₹130</div></div><p class="menu-item-desc">Slow-cooked carrot pudding with milk, ghee, sugar, cardamom, and garnished with dry fruits.</p><div class="menu-item-footer"><span class="menu-item-tag">Winter Special · Warm</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="240"><div class="menu-item-img-wrap"><img src="./images/kheer1.webp" alt="Kheer" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Rice Kheer</div><div class="menu-item-price">₹110</div></div><p class="menu-item-desc">Creamy rice pudding slow-cooked in full-fat milk with saffron, cardamom, and rose water.</p><div class="menu-item-footer"><span class="menu-item-tag">Traditional · Creamy</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- Beverages -->
+  <div class="menu-category" id="cat-beverages">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:var(--orange);"><i class="fas fa-glass-water-droplet"></i> Refreshments</div>
+      <h2 class="menu-category-title">Beverages & <span>Shakes</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/mango-lassi.jpg" alt="Mango Lassi" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Mango Lassi</div><div class="menu-item-price">₹100</div></div><p class="menu-item-desc">Thick, refreshing yogurt drink blended with Alphonso mango pulp. India's most loved summer drink.</p><div class="menu-item-footer"><span class="menu-item-tag">Sweet · Chilled</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/sweet-lassi.webp" alt="Sweet Lassi" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Sweet Lassi</div><div class="menu-item-price">₹80</div></div><p class="menu-item-desc">Classic churned yogurt drink sweetened with sugar and flavored with rose water.</p><div class="menu-item-footer"><span class="menu-item-tag">Classic · Refreshing</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/masala-chai.webp" alt="Masala Chai" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Masala Chai</div><div class="menu-item-price">₹60</div></div><p class="menu-item-desc">Strong Indian tea brewed with ginger, cardamom, cinnamon, and black pepper. Soulful and warming.</p><div class="menu-item-footer"><span class="menu-item-tag">Spiced · Hot</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="240"><div class="menu-item-img-wrap"><img src="./images/rose-sharbat.jpg" alt="Rose Sherbet" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="veg-badge">Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Rose Sherbet</div><div class="menu-item-price">₹70</div></div><p class="menu-item-desc">Chilled rose-flavored drink made with real rose petals, basil seeds, and milk. Royal and refreshing.</p><div class="menu-item-footer"><span class="menu-item-tag">Royal · Floral</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- ===== NON-VEG CATEGORIES ===== -->
+
+  <!-- Butter Chicken Specials -->
+  <div class="menu-category" id="cat-butter-chicken">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#c83232;"><i class="fas fa-drumstick-bite"></i> Our Signature</div>
+      <h2 class="menu-category-title">Butter Chicken <span>Specials</span></h2>
+      <p style="color:var(--text-light); font-size:0.9rem; max-width:500px; margin:0 auto;">The dish that put Indian cuisine on the world map — perfected here for over 5 decades</p>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/Butter-chicken.webp" alt="Classic Butter Chicken" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Classic Murgh Makhani</div><div class="menu-item-price">₹320</div></div><p class="menu-item-desc">Our timeless recipe — tender chicken in a silky tomato-butter-cream sauce with 12 aromatic spices.</p><div class="menu-item-footer"><span class="menu-item-tag">Signature · Rich</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/spicy-butter-chicken.jpg" alt="Spicy Butter Chicken" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Spicy Butter Chicken</div><div class="menu-item-price">₹340</div></div><p class="menu-item-desc">Extra fiery version of our butter chicken — all the creaminess but with a bold chili kick.</p><div class="menu-item-footer"><span class="menu-item-tag">Spicy Version · Bold</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/dhaba-style-chicken.jpg" alt="Dhaba Style" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Dhaba Style Chicken</div><div class="menu-item-price">₹310</div></div><p class="menu-item-desc">Rustic roadside-style chicken curry cooked over a wood fire with mustard oil and whole spices.</p><div class="menu-item-footer"><span class="menu-item-tag">Rustic · Smoky</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- Tandoori Chicken -->
+  <div class="menu-category" id="cat-tandoori-chicken">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#c83232;"><i class="fas fa-fire"></i> Tandoor Special</div>
+      <h2 class="menu-category-title">Tandoori <span>Chicken</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/tandoori-chicken.jpg" alt="Tandoori Chicken" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Half Tandoori Chicken</div><div class="menu-item-price">₹340</div></div><p class="menu-item-desc">Overnight marinated chicken halves roasted in our clay tandoor. Beautifully charred with juicy interior.</p><div class="menu-item-footer"><span class="menu-item-tag">Tandoor Classic · Smoky</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/chicken-tikka.jpg" alt="Chicken Tikka" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Chicken Tikka (6 pcs)</div><div class="menu-item-price">₹300</div></div><p class="menu-item-desc">Boneless chicken pieces marinated in yogurt and spices, skewered and cooked in tandoor to perfection.</p><div class="menu-item-footer"><span class="menu-item-tag">Boneless · Smoky</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/chicken-Malai-tikka.jpg" alt="Malai Tikka" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Malai Tikka (6 pcs)</div><div class="menu-item-price">₹320</div></div><p class="menu-item-desc">Creamy, mild chicken tikka marinated in cream-cheese and white spices — melt-in-your-mouth tender.</p><div class="menu-item-footer"><span class="menu-item-tag">Creamy · Mild</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- Mughlai -->
+  <div class="menu-category" id="cat-mughlai">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#c83232;"><i class="fas fa-crown"></i> Royal Heritage</div>
+      <h2 class="menu-category-title">Mughlai <span>Non-Veg</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/mutton-dum-biryani.jpg" alt="Mutton Biryani" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Mutton Dum Biryani</div><div class="menu-item-price">₹420</div></div><p class="menu-item-desc">Awadhi-style slow-cooked mutton biryani sealed in dough for perfect dum cooking. The crown jewel.</p><div class="menu-item-footer"><span class="menu-item-tag">Royal · Premium</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/nihari-lamb-shank.jpg" alt="Nihari" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Nihari (Lamb Shank)</div><div class="menu-item-price">₹480</div></div><p class="menu-item-desc">Slow-cooked lamb shank in a rich spiced broth — a traditional Mughal morning feast, now served all day.</p><div class="menu-item-footer"><span class="menu-item-tag">Heritage · Slow Cooked</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/mughlai-chicken.jpg" alt="Mughlai Chicken" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Mughlai Chicken</div><div class="menu-item-price">₹360</div></div><p class="menu-item-desc">Chicken in a royal Mughal-style gravy with saffron, cashews, rose water, and kewra essence.</p><div class="menu-item-footer"><span class="menu-item-tag">Aromatic · Royal</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- Fish Specials -->
+  <div class="menu-category" id="cat-fish">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#c83232;"><i class="fas fa-fish"></i> Coastal Catch</div>
+      <h2 class="menu-category-title">Fish <span>Specials</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/malabar-fish-curry.webp" alt="Malabar Fish Curry" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Malabar Fish Curry</div><div class="menu-item-price">₹380</div></div><p class="menu-item-desc">Fresh fish fillets in a fragrant coconut-based curry with South Indian spices and curry leaves.</p><div class="menu-item-footer"><span class="menu-item-tag">Coastal · Aromatic</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/fish-tikka.jpg" alt="Fish Tikka" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Fish Tikka (4 pcs)</div><div class="menu-item-price">₹360</div></div><p class="menu-item-desc">Marinated fish fillets grilled in tandoor — flaky, flavorful, and beautifully charred.</p><div class="menu-item-footer"><span class="menu-item-tag">Tandoor · Smoky</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="400">
+  <div class="menu-item-img-wrap">
+    <img src="./images/fish-pakora.webp" alt="Fish Pakora" class="menu-item-img" />
+    <div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Fish Pakora</div>
+      <div class="menu-item-price">₹320</div>
+    </div>
+    <p class="menu-item-desc">Crispy, golden-fried fish fillets marinated in Amritsari spices and gram flour, served with mint chutney.</p>
+    <div class="menu-item-footer">
+      <span class="menu-item-tag">Crispy · Coastal</span>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <!-- Mutton -->
+  <div class="menu-category" id="cat-mutton">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#c83232;"><i class="fas fa-bone"></i> Mutton Specialties</div>
+      <h2 class="menu-category-title">Mutton <span>Specials</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/mutton-Rogan-Josh.jpg" alt="Mutton Rogan Josh" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Mutton Rogan Josh</div><div class="menu-item-price">₹420</div></div><p class="menu-item-desc">Kashmiri-style tender mutton in a vibrant red gravy scented with Kashmiri chilies and spices.</p><div class="menu-item-footer"><span class="menu-item-tag">Kashmiri · Spicy</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/mutton-keema-curry.jpg" alt="Mutton Keema" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Mutton Keema Curry</div><div class="menu-item-price">₹390</div></div><p class="menu-item-desc">Minced mutton slow-cooked with peas, tomatoes, and aromatic whole spices. Hearty and rich.</p><div class="menu-item-footer"><span class="menu-item-tag">Minced · Bold</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="400">
+  <div class="menu-item-img-wrap">
+    <img src="./images/mutton-masala-kurry.webp" alt="Mutton Masala Curry" class="menu-item-img" />
+    <div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Mutton Masala Curry</div>
+      <div class="menu-item-price">₹450</div>
+    </div>
+    <p class="menu-item-desc">Tender chunks of mutton slow-cooked in a rich, aromatic gravy of onions, tomatoes, and hand-ground spices.</p>
+    <div class="menu-item-footer">
+      <span class="menu-item-tag">Rich · Spicy</span>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <!-- Chicken Biryani -->
+  <div class="menu-category" id="cat-chicken-biryani">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#c83232;"><i class="fas fa-bowl-rice"></i> Biryani House</div>
+      <h2 class="menu-category-title">Chicken <span>Biryani</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/hydrabadi-dum-biryani.jpg" alt="Hyderabadi Biryani" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Hyderabadi Chicken Biryani</div><div class="menu-item-price">₹360</div></div><p class="menu-item-desc">The authentic Nizam's recipe — aromatic dum biryani with marinated chicken, saffron, and fried onions.</p><div class="menu-item-footer"><span class="menu-item-tag">Hyderabadi · Premium</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/Lucknowi-Awadhi-Biryani.jpg" alt="Lucknowi Biryani" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Lucknowi Awadhi Biryani</div><div class="menu-item-price">₹380</div></div><p class="menu-item-desc">Fragrant, delicate Awadhi biryani with subtle spicing — where every grain of rice is a treasure.</p><div class="menu-item-footer"><span class="menu-item-tag">Awadhi · Delicate</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="400">
+  <div class="menu-item-img-wrap">
+    <img src="./images/chicken-reshmi-biryani.webp" alt="Chicken Reshmi Biryani" class="menu-item-img" />
+    <div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Chicken Reshmi Biryani</div>
+      <div class="menu-item-price">₹380</div>
+    </div>
+    <p class="menu-item-desc">Fragrant basmati rice layered with succulent, cream-marinated reshmi chicken kebabs and aromatic saffron threads.</p>
+    <div class="menu-item-footer">
+      <span class="menu-item-tag">Fragrant · Royal</span>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <!-- Egg Curry -->
+  <div class="menu-category" id="cat-egg">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#c83232;"><i class="fas fa-egg"></i> Egg Dishes</div>
+      <h2 class="menu-category-title">Egg <span>Curry Dishes</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/egg-masala-curry.jpg" alt="Egg Curry" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Egg Masala Curry</div><div class="menu-item-price">₹200</div></div><p class="menu-item-desc">Hard-boiled eggs in a rich, spicy onion-tomato gravy. Simple, satisfying, and deeply flavorful.</p><div class="menu-item-footer"><span class="menu-item-tag">Classic · Spicy</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="80"><div class="menu-item-img-wrap"><img src="./images/egg-bhurji.jpg" alt="Egg Bhurji" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Egg Bhurji (Masala)</div><div class="menu-item-price">₹180</div></div><p class="menu-item-desc">Scrambled eggs cooked Indian style with onions, tomatoes, chillies, and a spice mix. Best with naan.</p><div class="menu-item-footer"><span class="menu-item-tag">Quick · Spicy</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="400">
+  <div class="menu-item-img-wrap">
+    <img src="./images/omlette.webp" alt="Cheese Omelette" class="menu-item-img" />
+    <div class="menu-item-badge-wrap"><span class="egg-badge">Egg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Cheese Omelette</div>
+      <div class="menu-item-price">₹140</div>
+    </div>
+    <p class="menu-item-desc">Fluffy three-egg omelette folded over a generous core of melted cheddar and fresh garden herbs.</p>
+    <div class="menu-item-footer">
+      <span class="menu-item-tag">Classic · Cheesy</span>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+
+
+  <!-- Kebabs & Starters -->
+  <div class="menu-category" id="cat-kebabs">
+    <div class="menu-category-header">
+      <div class="section-tag" style="justify-content:center; color:#c83232;"><i class="fas fa-drumstick-bite"></i> Kebab Corner</div>
+      <h2 class="menu-category-title">Kebabs & <span>Starters</span></h2>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card" data-anim="up"><div class="menu-item-img-wrap"><img src="./images/Seekh-Kebab.jpg" alt="Seekh Kebab" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Seekh Kebab (4 pcs)</div><div class="menu-item-price">₹290</div></div><p class="menu-item-desc">Minced lamb mixed with herbs and spices, skewered and grilled over charcoal for a smoky perfection.</p><div class="menu-item-footer"><span class="menu-item-tag">Charcoal Grilled · Smoky</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="160"><div class="menu-item-img-wrap"><img src="./images/chicken-kebab.jpg" alt="Chicken 65" loading="lazy" class="menu-item-img"/><div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div></div><div class="menu-item-body"><div class="menu-item-top"><div class="menu-item-name">Chicken 65</div><div class="menu-item-price">₹260</div></div><p class="menu-item-desc">Fiery, crispy South Indian fried chicken with curry leaves and red chili — a crowd favorite starter.</p><div class="menu-item-footer"><span class="menu-item-tag">South Indian · Crispy</span></div></div></div>
+      <div class="menu-item-card" data-anim="up" data-delay="400">
+  <div class="menu-item-img-wrap">
+    <img src="./images/tangri-kabab.webp" alt="Tangri Kebab" class="menu-item-img" />
+    <div class="menu-item-badge-wrap"><span class="nonveg-badge">Non-Veg</span></div>
+  </div>
+  <div class="menu-item-body">
+    <div class="menu-item-top">
+      <div class="menu-item-name">Tangri Kebab</div>
+      <div class="menu-item-price">₹290</div>
+    </div>
+    <p class="menu-item-desc">Plump chicken drumsticks marinated in a rich cashew-yogurt paste, grilled to perfection in a clay tandoor.</p>
+    <div class="menu-item-footer">
+      <span class="menu-item-tag">Tandoori · Smoky</span>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="nav-logo" style="gap:12px; margin-bottom:0;">
+        <div class="nav-logo-icon" style="background:var(--gradient-gold);">🏵️</div>
+        <div class="nav-logo-text">
+          <span class="brand-name" style="color:var(--white); font-size:1.1rem;">Hindustan Hindu Hotel</span>
+          <span class="brand-tagline" style="color:var(--gold);">Since 1959 · Fine Dining</span>
+        </div>
+      </div>
+      <p class="footer-brand-desc">
+        A legacy of authentic Indian flavors, royal hospitality, and timeless culinary excellence. We serve more than food — we serve culture, memories, and happiness.
+      </p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/919892832309" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4 class="footer-heading">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Our Menu</h4>
+      <ul class="footer-links">
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Veg Specials</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Non-Veg Dishes</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Biryani & Rice</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Tandoor Dishes</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Desserts & Sweets</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Beverages</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Contact Us</h4>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="footer-contact-text">
+          <strong>Address</strong>
+          Hindustan Hindu Hotel shop no 1 Caves road, Station Rd, near Bank of Baroda, Jogeshwari East, Mumbai, Maharashtra 400060
+        </div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon"><i class="fas fa-phone"></i></div>
+        <div class="footer-contact-text">
+          <strong>Phone</strong>
+          <a href="tel:+919892832309">+91 98928-32309</a>
+        </div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+        <div class="footer-contact-text">
+          <strong>Email</strong>
+          <a href="mailto:jayakarashetty04@gmail.com">jayakarashetty04@gmail.com</a>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copyright">© 2024 <span>Hindustan Hindu Hotel</span>. All Rights Reserved. Made with ❤️ in India.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+    <script src="/script.js"></script>

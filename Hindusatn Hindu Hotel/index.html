@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hindustan Hindu Hotel – Authentic Indian Fine Dining</title>
+  <meta name="description" content="Experience royal Indian hospitality at Hindustan Hindu Hotel. Premium Indian cuisine, traditional flavors, and unforgettable dining experiences." />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+  <style>
+    .category-card {
+      min-width: 200px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      height: 260px;
+      cursor: pointer;
+      flex-shrink: 0;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    .category-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
+    .category-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+    .category-card:hover img { transform: scale(1.08); }
+    .category-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(44,24,16,0.85) 0%, rgba(44,24,16,0.3) 60%, transparent 100%);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .category-card-name {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .category-card-count {
+      font-size: 0.75rem;
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+    .category-card-icon {
+      position: absolute;
+      top: 12px; right: 12px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+    /* Interior Section */
+    .interior-section {
+      background: var(--cream);
+      padding: 100px 5%;
+    }
+    .interior-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1280px;
+      margin: 50px auto 0;
+    }
+    .interior-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      height: 300px;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .interior-item:hover { transform: scale(1.02); box-shadow: var(--shadow-hover); }
+    .interior-item:first-child { grid-row: span 2; height: auto; }
+    .interior-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+    .interior-item:hover img { transform: scale(1.06); }
+   
+    .interior-item:hover { opacity: 1; }
+    @media (max-width: 768px) {
+      .interior-grid { grid-template-columns: 1fr 1fr; }
+      .interior-item:first-child { grid-column: span 2; height: 260px; }
+      .interior-item { height: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- =========== NAVIGATION =========== -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+   <div class="nav-logo-text">
+      <span class="brand-name">Hindustan Hindu Hotel</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="/index.html" class="active">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/menu.html">Menu</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/contact.html" class="nav-reserve-btn">Reserve Table</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/menu.html">Menu</a>
+  <a href="/gallery.html">Gallery</a>
+  <a href="/contact.html">Contact</a>
+  <a href="/contact.html" class="nav-reserve-btn" style="margin-top:10px;padding:12px 30px!important;font-size:0.95rem!important;">Reserve a Table</a>
+</div>
+
+<!-- =========== HERO =========== -->
+<section class="hero" id="home">
+  <div class="hero-bg" style="background-image: url('/images/Masala-Dosa.jpg');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-particles"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <i class="fas fa-crown"></i>
+      Established in 1959 — A Legacy of Authentic Indian Cuisine
+    </div>
+    <h1 class="hero-title">
+      Experience the <span>Royal Taste</span>
+    </h1>
+    <p class="hero-subtitle font-elegant">— A Journey Through Authentic Indian Flavors —</p>
+    <p class="hero-description">
+      Where ancient recipes meet modern elegance. Every dish tells a story of India's rich culinary heritage, crafted with love, tradition, and the finest spices.
+    </p>
+    <div class="hero-buttons">
+      <a href="menu.html" class="btn btn-primary">
+        <i class="fas fa-utensils"></i> Explore Our Menu
+      </a>
+      <a href="gallery.html" class="btn btn-outline">
+        <i class="fas fa-star"></i> Gallery
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-number">65+</div>
+      <div class="hero-stat-label">Years of Legacy</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">200+</div>
+      <div class="hero-stat-label">Signature Dishes</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">4.8★</div>
+      <div class="hero-stat-label">Average Rating</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">50K+</div>
+      <div class="hero-stat-label">Happy Guests</div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== INTRO SECTION =========== -->
+<section class="intro-section">
+  <div class="intro-grid">
+    <div class="intro-images" data-anim="left">
+      <img src="./images/hotel.jpeg" alt="Restaurant" class="intro-img-main" />
+      <img src="./images/home-intro.jpeg" alt="Indian Food Spread" class="intro-img-secondary" />
+      <div class="intro-award float-anim">
+        <span>65</span>
+        <span>Years of Excellence</span>
+      </div>
+    </div>
+    <div class="intro-content" data-anim="right">
+      <div class="section-tag"><i class="fas fa-leaf"></i> Our Story</div>
+      <h2 class="section-title">A Legacy of <span>Authentic</span> Indian Flavors</h2>
+      <div class="section-divider">
+        <span class="section-divider-icon">✦</span>
+      </div>
+      <p style="font-size:1rem; color:var(--text-light); line-height:1.9; margin-bottom:18px;">
+        Established in 1959, Hindustan Hindu Hotel has been serving the finest Indian cuisine with an unwavering commitment to authenticity, quality, and hospitality. Our kitchen is a sanctuary where age-old recipes are preserved and celebrated.
+      </p>
+      <p style="font-size:0.95rem; color:var(--text-light); line-height:1.9;">
+        From the aromatic kitchens of Punjab to the coastal delights of South India, every dish on our menu is a tribute to India's vast and magnificent culinary heritage.
+      </p>
+      <div class="intro-features">
+        <div class="intro-feature">
+          <div class="intro-feature-icon"><i class="fas fa-fire-flame-curved"></i></div>
+          <div class="intro-feature-text">
+            <h4>Live Tandoor</h4>
+            <p>Traditional clay oven for authentic smoky flavors</p>
+          </div>
+        </div>
+        <div class="intro-feature">
+          <div class="intro-feature-icon"><i class="fas fa-seedling"></i></div>
+          <div class="intro-feature-text">
+            <h4>Farm Fresh</h4>
+            <p>Ingredients sourced from local organic farms</p>
+          </div>
+        </div>
+        <!-- <div class="intro-feature">
+          <div class="intro-feature-icon"><i class="fas fa-hat-chef"></i></div>
+          <div class="intro-feature-text">
+            <h4>Master Chefs</h4>
+            <p>25+ years of culinary expertise</p>
+          </div>
+        </div>
+        <div class="intro-feature">
+          <div class="intro-feature-icon"><i class="fas fa-award"></i></div>
+          <div class="intro-feature-text">
+            <h4>Award Winning</h4>
+            <p>Recognized for excellence in Indian cuisine</p>
+          </div>
+        </div> -->
+      </div>
+      <div style="margin-top:36px; display:flex; gap:16px; flex-wrap:wrap;">
+        <a href="about.html" class="btn btn-primary"><i class="fas fa-info-circle"></i> Our Story</a>
+        <a href="menu.html" class="btn btn-outline-dark"><i class="fas fa-book-open"></i> View Menu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== FEATURED DISHES =========== -->
+<section class="featured-section">
+  <div class="section-header" data-anim="up">
+    <div class="section-tag"><i class="fas fa-star"></i> Our Specialties</div>
+    <h2 class="section-title">Featured <span>Signature Dishes</span></h2>
+    <div class="section-divider"><span class="section-divider-icon">✦</span></div>
+    <p class="section-subtitle">Handpicked by our executive chef — dishes that define our restaurant's soul and legacy</p>
+  </div>
+  <div class="dishes-grid" style="max-width:1280px; margin:0 auto;">
+
+    <div class="dish-card" data-anim="up" data-delay="0">
+      <div class="dish-card-img-wrap">
+        <img src="./images/Butter-chicken.webp" alt="Butter Chicken" class="dish-card-img" />
+        <div class="dish-card-badge">Chef's Pick</div>
+        <div class="dish-card-overlay">
+          <a href="menu.html" class="dish-card-overlay-btn">View in Menu</a>
+        </div>
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-card-header">
+          <div class="dish-card-name">Murgh Makhani (Butter Chicken)</div>
+          <!-- <div class="dish-card-price">₹320</div> -->
+        </div>
+        <p class="dish-card-desc">Tender chicken in a velvety tomato-butter sauce with aromatic spices. Our most loved signature dish.</p>
+        <div class="dish-card-footer">
+          <span class="nonveg-badge">Non-Veg</span>
+          <div class="dish-rating">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <span>(4.9)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dish-card" data-anim="up" data-delay="100">
+      <div class="dish-card-img-wrap">
+        <img src="./images/paneer-tikka-masala.jpg" alt="Paneer Tikka Masala" class="dish-card-img" />
+        <div class="dish-card-badge">Bestseller</div>
+        <div class="dish-card-overlay">
+          <a href="menu.html" class="dish-card-overlay-btn">View in Menu</a>
+        </div>
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-card-header">
+          <div class="dish-card-name">Paneer Tikka Masala</div>
+          <!-- <div class="dish-card-price">₹280</div> -->
+        </div>
+        <p class="dish-card-desc">Cottage cheese cubes marinated in spiced yogurt, grilled in tandoor and served in rich masala gravy.</p>
+        <div class="dish-card-footer">
+          <span class="veg-badge">Veg</span>
+          <div class="dish-rating">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <span>(4.8)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dish-card" data-anim="up" data-delay="200">
+      <div class="dish-card-img-wrap">
+        <img src="./images/hydrabadi-dum-biryani.jpg" alt="Hydrabadi Dum Biryani" class="dish-card-img" />
+        <div class="dish-card-badge">Premium</div>
+        <div class="dish-card-overlay">
+          <a href="menu.html" class="dish-card-overlay-btn">View in Menu</a>
+        </div>
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-card-header">
+          <div class="dish-card-name">Hyderabadi Dum Biryani</div>
+          <!-- <div class="dish-card-price">₹380</div> -->
+        </div>
+        <p class="dish-card-desc">Slow-cooked aromatic rice layered with tender meat, saffron, and hand-ground spices in dum style.</p>
+        <div class="dish-card-footer">
+          <span class="nonveg-badge">Non-Veg</span>
+          <div class="dish-rating">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <span>(4.9)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dish-card" data-anim="up" data-delay="300">
+      <div class="dish-card-img-wrap">
+        <img src="./images/dal-makhni.jpg" alt="Dal Makhani" class="dish-card-img" />
+        <div class="dish-card-badge">Heritage</div>
+        <div class="dish-card-overlay">
+          <a href="menu.html" class="dish-card-overlay-btn">View in Menu</a>
+        </div>
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-card-header">
+          <div class="dish-card-name">Dal Makhani</div>
+          <!-- <div class="dish-card-price">₹220</div> -->
+        </div>
+        <p class="dish-card-desc">Black lentils slow-cooked overnight with butter, cream and spices. A timeless classic of Punjabi cuisine.</p>
+        <div class="dish-card-footer">
+          <span class="veg-badge">Veg</span>
+          <div class="dish-rating">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <span>(4.8)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dish-card" data-anim="up" data-delay="400">
+      <div class="dish-card-img-wrap">
+        <img src="./images/tandoori-chicken.jpg" alt="Tandoori Chicken" class="dish-card-img" />
+        <div class="dish-card-badge">Tandoor Special</div>
+        <div class="dish-card-overlay">
+          <a href="menu.html" class="dish-card-overlay-btn">View in Menu</a>
+        </div>
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-card-header">
+          <div class="dish-card-name">Tandoori Chicken</div>
+          <!-- <div class="dish-card-price">₹340</div> -->
+        </div>
+        <p class="dish-card-desc">Whole chicken marinated overnight in yogurt and spices, roasted to perfection in our traditional clay oven.</p>
+        <div class="dish-card-footer">
+          <span class="nonveg-badge">Non-Veg</span>
+          <div class="dish-rating">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <span>(4.9)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dish-card" data-anim="up" data-delay="500">
+      <div class="dish-card-img-wrap">
+        <img src="./images/gulabjamun-with-rabri.webp" alt="Gulab Jamun With Rabri" class="dish-card-img" />
+        <div class="dish-card-badge">Sweet Delight</div>
+        <div class="dish-card-overlay">
+          <a href="menu.html" class="dish-card-overlay-btn">View in Menu</a>
+        </div>
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-card-header">
+          <div class="dish-card-name">Gulab Jamun with Rabri</div>
+          <!-- <div class="dish-card-price">₹120</div> -->
+        </div>
+        <p class="dish-card-desc">Soft milk-solid dumplings soaked in rose-flavored sugar syrup, served warm with creamy rabri.</p>
+        <div class="dish-card-footer">
+          <span class="veg-badge">Veg</span>
+          <div class="dish-rating">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <span>(4.7)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div style="text-align:center; margin-top:50px;" data-anim="up">
+    <a href="menu.html" class="btn btn-gold"><i class="fas fa-book-open"></i> View Full Menu</a>
+  </div>
+</section>
+
+<!-- =========== VEG SPECIALS =========== -->
+<section class="category-banner veg-section">
+  <div class="section-header" data-anim="up">
+    <div class="section-tag" style="color:#22a722;"><i class="fas fa-leaf"></i> Pure Vegetarian</div>
+    <h2 class="section-title">Veg <span>Special Dishes</span></h2>
+    <div class="section-divider"><span class="section-divider-icon">✦</span></div>
+    <p class="section-subtitle">A wholesome world of vegetarian cuisine crafted with love, herbs, and artisan masalas</p>
+  </div>
+  <div class="category-scroll" style="max-width:1280px; margin:0 auto;">
+
+    <div class="category-card">
+      <img src="./images/shahipaneer.jpg" alt="Shahi Paneer" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Shahi Paneer</div>
+        <!-- <div class="category-card-count">Rich Mughlai Gravy · ₹260</div> -->
+      </div>
+      <div class="category-card-icon">🌿</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/dal-tadk.jpeg" alt="Dal Tadka" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Dal Tadka</div>
+        <!-- <div class="category-card-count">Yellow Lentils · ₹180</div> -->
+      </div>
+      <div class="category-card-icon">🌿</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/aloo-gobi-masala.jpg" alt="Aloo Gobi Masala" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Aloo Gobi Masala</div>
+        <!-- <div class="category-card-count">Potato & Cauliflower · ₹190</div> -->
+      </div>
+      <div class="category-card-icon">🌿</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/Veg-Dum-Biryani.jpg" alt="Veg Biryani" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Veg Dum Biryani</div>
+        <!-- <div class="category-card-count">Aromatic Rice · ₹240</div> -->
+      </div>
+      <div class="category-card-icon">🌿</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/palak-paneer.jpg" alt="Palak Paneer" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Palak Paneer</div>
+        <!-- <div class="category-card-count">Spinach & Cheese · ₹250</div> -->
+      </div>
+      <div class="category-card-icon">🌿</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/chole-bhature.webp" alt="Chole Bhature" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Chole Bhature</div>
+        <!-- <div class="category-card-count">Punjabi Special · ₹170</div> -->
+      </div>
+      <div class="category-card-icon">🌿</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/garlic-naan.jpg" alt="Garlic Naan" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Garlic Naan</div>
+        <!-- <div class="category-card-count">Tandoor Bread · ₹60</div> -->
+      </div>
+      <div class="category-card-icon">🌿</div>
+    </div>
+
+  </div>
+  <div style="text-align:center; margin-top:40px;" data-anim="up">
+    <a href="menu.html" class="btn btn-outline-dark"><i class="fas fa-leaf"></i> Explore Full Veg Menu</a>
+  </div>
+</section>
+
+<!-- =========== NON-VEG SPECIALS =========== -->
+<section class="category-banner nonveg-section">
+  <div class="section-header" data-anim="up">
+    <div class="section-tag" style="color:#c83232;"><i class="fas fa-drumstick-bite"></i> Non-Vegetarian</div>
+    <h2 class="section-title">Non-Veg <span>Royal Feasts</span></h2>
+    <div class="section-divider"><span class="section-divider-icon">✦</span></div>
+    <p class="section-subtitle">Bold, fiery, and indulgent — our non-veg menu is a celebration of India's rich meat cooking traditions</p>
+  </div>
+  <div class="category-scroll" style="max-width:1280px; margin:0 auto;">
+
+    <div class="category-card">
+      <img src="./images/Butter-chicken.webp" alt="Butter Chicken" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Butter Chicken</div>
+        <!-- <div class="category-card-count">Creamy Tomato · ₹320</div> -->
+      </div>
+      <div class="category-card-icon">🍗</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/tandoori-chicken.jpg" alt="Tandoori Chicken" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Tandoori Chicken</div>
+        <!-- <div class="category-card-count">Clay Oven Roast · ₹340</div> -->
+      </div>
+      <div class="category-card-icon">🍗</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/hydrabadi-dum-biryani.jpg" alt="Chicken Biryani" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Chicken Biryani</div>
+        <!-- <div class="category-card-count">Dum Cooked · ₹360</div> -->
+      </div>
+      <div class="category-card-icon">🍗</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/mutton-Rogan-Josh.jpg" alt="Mutton Rogan Josh" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Mutton Rogan Josh</div>
+        <!-- <div class="category-card-count">Kashmiri Special · ₹420</div> -->
+      </div>
+      <div class="category-card-icon">🍖</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/malabar-fish-curry.webp" alt="Fish Curry" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Malabar Fish Curry</div>
+        <!-- <div class="category-card-count">Coastal Style · ₹380</div> -->
+      </div>
+      <div class="category-card-icon">🐟</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/Seekh-Kebab.jpg" alt="Seekh Kebab" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Seekh Kebab</div>
+        <!-- <div class="category-card-count">Minced Lamb · ₹290</div> -->
+      </div>
+      <div class="category-card-icon">🍢</div>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/chicken-tikka.jpg" alt="Chicken Tikka" />
+      <div class="category-card-overlay">
+        <div class="category-card-name">Chicken Tikka</div>
+        <!-- <div class="category-card-count">Tandoor Marinated · ₹300</div> -->
+      </div>
+      <div class="category-card-icon">🍗</div>
+    </div>
+
+  </div>
+  <div style="text-align:center; margin-top:40px;" data-anim="up">
+    <a href="menu.html" class="btn btn-primary"><i class="fas fa-drumstick-bite"></i> Explore Non-Veg Menu</a>
+  </div>
+</section>
+
+<!-- =========== CHEF SECTION =========== -->
+<section class="chef-intro-section" style="display: none;">
+  <div class="chef-intro-grid">
+    <div class="chef-img-wrap" data-anim="left">
+      <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&q=80" alt="Head Chef" class="chef-img-main" />
+      <div class="chef-exp-badge">
+        <span class="num">25+</span>
+        <span class="label">Years of Mastery</span>
+      </div>
+    </div>
+    <div data-anim="right">
+      <div class="section-tag"><i class="fas fa-hat-chef"></i> Meet The Maestro</div>
+      <h2 class="section-title">Chef <span>Rajan Kumar</span></h2>
+      <p style="font-family:var(--font-elegant); font-size:1.15rem; color:var(--text-medium); font-style:italic; margin-bottom:18px;">Executive Head Chef & Culinary Director</p>
+      <div class="section-divider" style="margin:16px 0;"><span class="section-divider-icon">✦</span></div>
+      <p style="font-size:0.95rem; color:var(--text-light); line-height:1.9; margin-bottom:16px;">
+        With over 25 years of culinary mastery spanning royal kitchens across India, Chef Rajan Kumar brings the soul of authentic Indian cuisine to every plate. Trained under legendary masters in Lucknow and Punjab, his recipes carry centuries of flavor wisdom.
+      </p>
+      <p style="font-size:0.92rem; color:var(--text-light); line-height:1.8; margin-bottom:28px;">
+        His philosophy is simple: <em>"Food is love made visible."</em> Each dish is prepared with precision, passion, and the finest handpicked ingredients.
+      </p>
+      <div class="chef-specialties">
+        <span class="chef-specialty-tag">Dum Biryani</span>
+        <span class="chef-specialty-tag">Tandoor Kebabs</span>
+        <span class="chef-specialty-tag">Mughlai Cuisine</span>
+        <span class="chef-specialty-tag">Royal Curries</span>
+        <span class="chef-specialty-tag">Indian Sweets</span>
+        <span class="chef-specialty-tag">Traditional Breads</span>
+      </div>
+      <div style="margin-top:32px; display:flex; gap:16px; flex-wrap:wrap;">
+        <a href="chef-special.html" class="btn btn-primary"><i class="fas fa-utensils"></i> Chef's Specials</a>
+        <a href="about.html" class="btn btn-outline-dark"><i class="fas fa-user"></i> Meet Our Team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== DINING EXPERIENCE =========== -->
+<section class="experience-section">
+  <div class="experience-grid">
+    <div class="experience-video-wrap" data-anim="left">
+      <img src="./images/main-course.avif" alt="Dining Experience" class="experience-img" />
+      <!-- <div class="experience-play-btn"><i class="fas fa-play"></i></div> -->
+    </div>
+    <div data-anim="right">
+      <div class="section-tag"><i class="fas fa-gem"></i> Premium Experience</div>
+      <h2 class="section-title">More Than Just <span>a Meal</span></h2>
+      <div class="section-divider" style="margin:16px 0 24px;"><span class="section-divider-icon">✦</span></div>
+      <p style="font-size:0.95rem; color:var(--text-light); line-height:1.9; margin-bottom:28px;">
+        At Hindustan Hindu Hotel, dining is an immersive cultural experience. From the moment you arrive, you're welcomed into a world of warmth, elegance, and extraordinary flavors.
+      </p>
+      <div class="experience-features">
+        <div class="experience-feature">
+          <div class="experience-feature-icon"><i class="fas fa-fire"></i></div>
+        <div class="experience-feature-text">
+  <h4>Signature Tandoori Specials</h4>
+  <p>Smoky grilled delicacies prepared in traditional clay ovens</p>
+</div>
+        </div>
+        <div class="experience-feature">
+          <div class="experience-feature-icon"><i class="fas fa-utensils"></i></div>
+          <div class="experience-feature-text">
+  <h4>Chef’s Special Recipes</h4>
+  <p>Exclusive handcrafted recipes created with authentic regional flavors</p>
+</div>
+        </div>
+        <div class="experience-feature">
+          <div class="experience-feature-icon"><i class="fas fa-wine-glass-alt"></i></div>
+          <div class="experience-feature-text">
+            <h4>Premium Beverages</h4>
+            <p>Curated selection of traditional sherbets, lassi, and mocktails</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== STATISTICS =========== -->
+<section class="stats-section">
+  <div class="stats-grid" style="max-width:1280px; margin:0 auto;">
+    <div class="stat-item" data-anim="up" data-delay="0">
+      <div class="stat-icon">🍽️</div>
+      <div class="stat-number"><span data-count="50000">0</span><span class="stat-plus">+</span></div>
+      <div class="stat-label">Happy Guests Served</div>
+    </div>
+    <div class="stat-item" data-anim="up" data-delay="150">
+      <div class="stat-icon">👨‍🍳</div>
+      <div class="stat-number"><span data-count="200">0</span><span class="stat-plus">+</span></div>
+      <div class="stat-label">Authentic Recipes</div>
+    </div>
+    <div class="stat-item" data-anim="up" data-delay="300">
+      <div class="stat-icon">🏆</div>
+      <div class="stat-number"><span data-count="28">0</span><span class="stat-plus">+</span></div>
+      <div class="stat-label">Awards Won</div>
+    </div>
+    <div class="stat-item" data-anim="up" data-delay="450">
+      <div class="stat-icon">⭐</div>
+      <div class="stat-number"><span data-count="65">0</span><span class="stat-plus"></span></div>
+      <div class="stat-label">Years of Legacy</div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== HOSPITALITY =========== -->
+<section class="hospitality-section">
+  <div class="section-header" data-anim="up" style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag"><i class="fas fa-hands-holding-heart"></i> Our Promise</div>
+    <h2 class="section-title">Traditional <span>Indian Hospitality</span></h2>
+    <div class="section-divider"><span class="section-divider-icon">✦</span></div>
+    <p class="section-subtitle" style="margin-bottom: 15px;">We believe every guest deserves to be treated like royalty. Our hospitality reflects the age-old Indian tradition of "Atithi Devo Bhava"</p>
+  </div>
+  <div class="hospitality-cards" data-anim="up">
+    <div class="hospitality-card">
+      <div class="hospitality-number">01</div>
+      <span class="hospitality-icon">🙏</span>
+      <h3>Atithi Devo Bhava</h3>
+      <p>The guest is God — our entire team is dedicated to ensuring your comfort, happiness, and a memorable experience in every visit.</p>
+    </div>
+    <div class="hospitality-card">
+      <div class="hospitality-number">02</div>
+     <span class="hospitality-icon">🍲</span>
+    <h3>Shahi Pakwan</h3>
+    <p>Savor time-honored royal recipes passed down through generations, slow-cooked to perfection using pure ghee and freshly ground house spices.</p> </div>
+    <div class="hospitality-card">
+      <div class="hospitality-number">03</div>
+      <span class="hospitality-icon">🎁</span>
+      <h3>Personalized Dining</h3>
+      <p>Our team remembers your preferences, dietary needs, and celebrations to make each visit uniquely special and personal.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========== INTERIOR SHOWCASE =========== -->
+<section class="interior-section">
+  <div class="section-header" data-anim="up">
+    <div class="section-tag"><i class="fas fa-building"></i> Our Ambiance</div>
+    <h2 class="section-title">A <span>Royal Setting</span> for Every Occasion</h2>
+    <div class="section-divider"><span class="section-divider-icon">✦</span></div>
+    <p class="section-subtitle">Step into a world inspired by India's grand royal palaces — warm lights, intricate décor, and an atmosphere that elevates every meal</p>
+  </div>
+  <div class="interior-grid" data-anim="up">
+    <div class="interior-item">
+      <img src="./images/hotel.jpeg" alt="Restaurant" loading="lazy" />
+     </div>
+    <div class="interior-item">
+      <img src="./images/./about2.webp" alt="Private Dining" loading="lazy" />
+     </div>
+    <div class="interior-item">
+      <img src="./images/about3.webp" alt="Bar Lounge" />
+    </div>
+    <div class="interior-item">
+      <img src="./images/about4.jpeg" alt="Open Kitchen" />
+    </div>
+    <div class="interior-item">
+      <img src="./images/about5.jpeg" alt="Terrace Dining" />
+     </div>
+     <div class="interior-item">
+      <img src="./images/about6.jpg" alt="Terrace Dining" />
+    </div>
+     <div class="interior-item">
+      <img src="./images/about7.webp" alt="Terrace Dining" />
+     </div>
+     <div class="interior-item">
+      <img src="./images/about8.jpg" alt="Terrace Dining" />
+    </div>
+  </div>
+</section>
+
+<!-- =========== GALLERY PREVIEW =========== -->
+<section class="gallery-preview-section" style="background-color:antiquewhite;">
+  <div class="section-header" data-anim="up">
+    <div class="section-tag"><i class="fas fa-images"></i> Visual Feast</div>
+    <h2 class="section-title">A Glimpse of <span>Our World</span></h2>
+    <div class="section-divider"><span class="section-divider-icon">✦</span></div>
+    <p class="section-subtitle">From vibrant dishes to warm dining moments — every frame tells a delicious story</p>
+  </div>
+  <div class="gallery-preview-grid" data-anim="up">
+    <div class="gp-item">
+      <img src="./images/main-course.avif" alt="Main Course" loading="lazy" />
+      <div class="gp-overlay"><i class="fas fa-expand-alt"></i></div>
+    </div>
+    <div class="gp-item">
+      <img src="./images/pasta.jpeg" alt="Pasta" loading="lazy" />
+      <div class="gp-overlay"><i class="fas fa-expand-alt"></i></div>
+    </div>
+    <div class="gp-item">
+      <img src="./images/Idli.jpg" alt="NIdli" loading="lazy" />
+      <div class="gp-overlay"><i class="fas fa-expand-alt"></i></div>
+    </div>
+    <div class="gp-item">
+      <img src="./images/Masala-Dosa.jpg" alt="Masala Dosa" loading="lazy" />
+      <div class="gp-overlay"><i class="fas fa-expand-alt"></i></div>
+    </div>
+    <div class="gp-item">
+      <img src="./images/gulabjamun-with-rabri.webp" alt="Dessert" loading="lazy" />
+      <div class="gp-overlay"><i class="fas fa-expand-alt"></i></div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:40px;" data-anim="up">
+    <a href="gallery.html" class="btn btn-gold"><i class="fas fa-images"></i> View Full Gallery</a>
+  </div>
+</section>
+
+<!-- =========== TESTIMONIALS =========== -->
+<section class="testimonials-section">
+  <div class="section-header" data-anim="up">
+    <div class="section-tag" style="color:var(--gold-light);"><i class="fas fa-quote-left"></i> Guest Reviews</div>
+    <h2 class="section-title" style="color:var(--white);">What Our <span>Guests Say</span></h2>
+    <div class="section-divider"><span class="section-divider-icon">✦</span></div>
+    <p class="section-subtitle" style="color:rgba(255,248,240,0.7);">Real words from our cherished guests who have experienced the taste of India at its finest</p>
+  </div>
+  <div class="testimonials-grid" data-anim="up">
+    <div class="testimonial-card">
+      <div class="testimonial-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">The Butter Chicken here is absolutely divine — it's creamy, aromatic, and the most authentic I've ever tasted. The ambiance takes you straight to a royal Indian palace. We celebrate every special occasion here!</p>
+      <div class="testimonial-author">
+        <!-- <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&q=80" alt="Rahul Sharma" class="testimonial-avatar" /> -->
+        <div class="testimonial-info">
+          <div class="name">Rahul Sharma</div>
+          <!-- <div class="role">Food Blogger · Delhi</div> -->
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">We celebrated our 25th anniversary here and it was magical! The private dining setup was stunning, the food was spectacular, and the staff treated us like royalty from start to finish. Truly unforgettable.</p>
+      <div class="testimonial-author">
+        <!-- <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Priya & Amit Malhotra" class="testimonial-avatar" /> -->
+        <div class="testimonial-info">
+          <div class="name">Priya & Amit Malhotra</div>
+          <!-- <div class="role">Regular Guests · Mumbai</div> -->
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">As a food critic, I've dined at many fine restaurants, but Hindustan Hindu Hotel stands apart. Their Hyderabadi Biryani is world-class, and Chef Rajan's attention to authenticity is rare and commendable.</p>
+      <div class="testimonial-author">
+        <!-- <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Vikram Singh" class="testimonial-avatar" /> -->
+        <div class="testimonial-info">
+          <div class="name">Vikram Singh</div>
+          <!-- <div class="role">Restaurant Critic · Bangalore</div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== WHY CHOOSE US =========== -->
+<section class="why-section">
+  <div class="section-header" data-anim="up">
+    <div class="section-tag"><i class="fas fa-certificate"></i> Why We're Different</div>
+    <h2 class="section-title">The <span>Hindustan Difference</span></h2>
+    <div class="section-divider"><span class="section-divider-icon">✦</span></div>
+    <p class="section-subtitle">We go beyond food — we create memories, celebrate culture, and honor the timeless art of Indian cooking</p>
+  </div>
+  <div class="why-grid" style="max-width:1280px; margin:0 auto;">
+    <div class="why-card" data-anim="up" data-delay="0">
+      <div class="why-icon">🌿</div>
+      <h3>100% Fresh Ingredients</h3>
+      <p>We source our vegetables, spices, and meats fresh daily from trusted local farms and markets for maximum freshness.</p>
+    </div>
+    <div class="why-card" data-anim="up" data-delay="100">
+      <div class="why-icon">🔥</div>
+      <h3>Traditional Cooking Methods</h3>
+      <p>Our clay tandoor ovens, stone grinders, and handmade masalas preserve the authentic taste of centuries-old Indian cooking.</p>
+    </div>
+    <div class="why-card" data-anim="up" data-delay="200">
+      <div class="why-icon">👨‍🍳</div>
+      <h3>Expert Culinary Team</h3>
+      <p>A team of master chefs from across India — Punjab, Awadh, Hyderabad, and Kerala — bringing regional expertise to every dish.</p>
+    </div>
+    <div class="why-card" data-anim="up" data-delay="300">
+      <div class="why-icon">🏵️</div>
+      <h3>Hygienic Kitchen</h3>
+      <p>FSSAI certified, ISO compliant kitchen with the highest standards of hygiene, safety, and food quality protocols.</p>
+    </div>
+    <div class="why-card" data-anim="up" data-delay="400">
+      <div class="why-icon">🎉</div>
+      <h3>Event & Catering</h3>
+      <p>From intimate family dinners to grand wedding receptions, our event team crafts unforgettable dining experiences.</p>
+    </div>
+   
+  </div>
+</section>
+
+<!-- =========== RESERVATION BANNER =========== -->
+<section class="reservation-banner">
+  <div style="position:relative; z-index:2; max-width:700px; margin:0 auto;">
+    <div class="section-tag" style="justify-content:center; color:var(--gold-light);">
+      <i class="fas fa-calendar-check"></i> Make a Reservation
+    </div>
+    <h2>Reserve Your <span>Royal Table</span> Today</h2>
+    <p>Book your dining experience in advance and let us prepare something extraordinary. Perfect for family gatherings, date nights, business lunches, and celebrations.</p>
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; position:relative;">
+      <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-plus"></i> Book a Table</a>
+      <a href="tel:+9198928-32309" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a>
+    </div>
+    <div class="reservation-info">
+      <div class="reservation-info-item"><i class="fas fa-clock"></i> Open Daily 9 AM – 12 AM</div>
+      <div class="reservation-info-item"><i class="fas fa-map-marker-alt"></i>shop no 1, Caves road, Jogeshwari East</div>
+      <div class="reservation-info-item"><i class="fas fa-users"></i> Capacity: 200 Guests</div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== FOOTER =========== -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="nav-logo" style="gap:12px; margin-bottom:0;">
+        <div class="nav-logo-icon" style="background:var(--gradient-gold);">🏵️</div>
+        <div class="nav-logo-text">
+          <span class="brand-name" style="color:var(--white); font-size:1.1rem;">Hindustan Hindu Hotel</span>
+          <span class="brand-tagline" style="color:var(--gold);">Since 1959 · Fine Dining</span>
+        </div>
+      </div>
+      <p class="footer-brand-desc">
+        A legacy of authentic Indian flavors, royal hospitality, and timeless culinary excellence. We serve more than food — we serve culture, memories, and happiness.
+      </p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/919892832309" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4 class="footer-heading">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Our Menu</h4>
+      <ul class="footer-links">
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Veg Specials</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Non-Veg Dishes</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Biryani & Rice</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Tandoor Dishes</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Desserts & Sweets</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Beverages</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Contact Us</h4>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="footer-contact-text">
+          <strong>Address</strong>
+          Hindustan Hindu Hotel shop no 1 Caves road, Station Rd, near Bank of Baroda, Jogeshwari East, Mumbai, Maharashtra 400060
+        </div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon"><i class="fas fa-phone"></i></div>
+        <div class="footer-contact-text">
+          <strong>Phone</strong>
+          <a href="tel:+9198928-32309">+91 98928-32309</a>
+        </div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+        <div class="footer-contact-text">
+          <strong>Email</strong>
+          <a href="mailto:jayakarashetty04@gmail.com">jayakarashetty04@gmail.com</a>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copyright">© 2024 <span>Hindustan Hindu Hotel</span>. All Rights Reserved. Made with ❤️ in India.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button id="scrollTop" style="position:fixed; bottom:28px; right:28px; width:48px; height:48px; background:var(--gradient-gold); border:none; border-radius:50%; color:var(--text-dark); font-size:1.1rem; cursor:pointer; box-shadow:0 4px 20px rgba(212,175,55,0.4); opacity:0; transition:var(--transition); z-index:9998;" aria-label="Scroll to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Lightbox -->
+<div class="lightbox">
+  <div class="lightbox-close"><i class="fas fa-times"></i></div>
+  <img src="" alt="Gallery Image" />
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>

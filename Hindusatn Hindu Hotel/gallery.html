@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Hindustan Hindu Hotel</title>
+   <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- =========== NAVIGATION =========== -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+   <div class="nav-logo-text">
+      <span class="brand-name">Hindustan Hindu Hotel</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="/index.html" class="active">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/menu.html">Menu</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/contact.html" class="nav-reserve-btn">Reserve Table</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/menu.html">Menu</a>
+  <a href="/gallery.html">Gallery</a>
+  <a href="/contact.html">Contact</a>
+  <a href="/contact.html" class="nav-reserve-btn" style="margin-top:10px;padding:12px 30px!important;font-size:0.95rem!important;">Reserve a Table</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('/images/allo-prantha.jpg');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="section-tag"><i class="fas fa-images"></i> Visual Story</div>
+    <h1>Our <span>Gallery</span></h1>
+    <p>A visual journey through our restaurant, cuisine, and memorable moments</p>
+    <div class="breadcrumb"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Gallery</span></div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <!-- Filter Buttons -->
+  <div class="gallery-filter" data-anim="up">
+    <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
+    <button class="gallery-filter-btn" data-filter="food">Food</button>
+    <button class="gallery-filter-btn" data-filter="interior">Interior</button>
+    <button class="gallery-filter-btn" data-filter="dining">Dining</button>
+    <button class="gallery-filter-btn" data-filter="chef">Dessert</button>
+    
+  </div>
+
+  <!-- Masonry Gallery -->
+  <div class="masonry-grid">
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/main-course.avif" alt="Indian Thali" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Indian Thali</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="interior">
+      <img src="./images/about2.webp" alt="Restaurant Interior" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Main Dining Hall</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/Butter-chicken.webp" alt="Butter Chicken" loading="lazy"  />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Butter Chicken</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="chef">
+      <img src="./images/gulabjamun-with-rabri.webp" alt="Chef at Work" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Chef at Work</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/Veg-Dum-Biryani.jpg" alt="Biryani" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Hyderabadi Biryani</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="interior">
+      <img src="./images/hotel.jpeg" alt="Private Dining" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Private Dining Room</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/paneer-tikka.webp" alt="Paneer Tikka" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Paneer Tikka</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="dining">
+      <img src="./images/about4.png" alt="Dining Area" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Evening Dining</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/dal-makhni.jpg" alt="Dal Makhani" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Dal Makhani</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="chef">
+      <img src="./images/rasmalai.jpg" alt="Kitchen" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>In Our Kitchen</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/malai-champ.jpg" alt="Tandoori" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Tandoori Chicken</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="events">
+      <img src="./images/allo-prantha.jpg" alt="Event" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Private Events</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/kheer.jpg" alt="Dessert" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Gulab Jamun</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="dining">
+      <img src="./images/about6.jpg" alt="Family Dining" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Family Dining</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/palak-paneer.jpg" alt="Palak Paneer" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Palak Paneer</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="interior">
+      <img src="./images/about7.webp" alt="Restaurant Bar" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Beverage Corner</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/samosa.avif" alt="Curry Bowl" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Curry Selection</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="chef">
+      <img src="./images/mango-lassi.jpg" alt="Chef Preparing" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Chef Preparing</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/garlic-naan.jpg" alt="Naan" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Fresh Naan Bread</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="events">
+      <img src="./images/about3.webp" alt="Celebration" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Celebrations</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/aloo-tikki.jpg" alt="Aloo Tikki" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Aloo Tikki</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="dining">
+      <img src="./images/about1.webp" alt="Food Spread" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Grand Food Spread</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="food">
+      <img src="./images/mutton-dum-biryani.jpg" alt="Mutton Curry" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Mutton Rogan Josh</span>
+      </div>
+    </div>
+
+    <div class="masonry-item" data-category="interior">
+      <img src="./images/sandwich.jpg" alt="Table Setting" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Premium Table Setting</span>
+      </div>
+    </div>
+
+     <div class="masonry-item" data-category="food">
+      <img src="./images/Idli.jpg" alt="Idli" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Idli</span>
+      </div>
+    </div>
+     <div class="masonry-item" data-category="food">
+      <img src="./images/Masala-Dosa.jpg" alt="Masala Dosa" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Masala Dosa</span>
+      </div>
+    </div>
+    v
+     <div class="masonry-item" data-category="food">
+      <img src="./images/veg-hakka-noodles.jpg" alt="Veg Hakka Noodles" loading="lazy" />
+      <div class="masonry-overlay">
+        <i class="fas fa-search-plus"></i>
+        <span>Veg Hakka Noodles</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox">
+  <div class="lightbox-close"><i class="fas fa-times"></i></div>
+  <img src="" alt="Gallery Photo" />
+</div>
+
+<!-- CTA BANNER -->
+<section style="background:var(--gradient-orange); padding:70px 5%; text-align:center;">
+  <div style="max-width:600px; margin:0 auto;">
+    <h2 style="font-family:var(--font-display); font-size:clamp(1.8rem,3vw,2.5rem); color:var(--white); margin-bottom:14px;">Experience It In Person</h2>
+    <p style="color:rgba(255,255,255,0.85); font-size:0.95rem; margin-bottom:30px; line-height:1.8;">These photos only capture a fraction of the magic. Come and experience the flavors, aromas, and warmth of Hindustan Hindu Hotel yourself.</p>
+    <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Reserve Your Table</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="nav-logo" style="gap:12px; margin-bottom:0;">
+        <div class="nav-logo-icon" style="background:var(--gradient-gold);">🏵️</div>
+        <div class="nav-logo-text">
+          <span class="brand-name" style="color:var(--white); font-size:1.1rem;">Hindustan Hindu Hotel</span>
+          <span class="brand-tagline" style="color:var(--gold);">Since 1959 · Fine Dining</span>
+        </div>
+      </div>
+      <p class="footer-brand-desc">
+        A legacy of authentic Indian flavors, royal hospitality, and timeless culinary excellence. We serve more than food — we serve culture, memories, and happiness.
+      </p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/919892832309" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4 class="footer-heading">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Our Menu</h4>
+      <ul class="footer-links">
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Veg Specials</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Non-Veg Dishes</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Biryani & Rice</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Tandoor Dishes</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Desserts & Sweets</a></li>
+        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Beverages</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Contact Us</h4>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="footer-contact-text">
+          <strong>Address</strong>
+          Hindustan Hindu Hotel shop no 1 Caves road, Station Rd, near Bank of Baroda, Jogeshwari East, Mumbai, Maharashtra 400060
+        </div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon"><i class="fas fa-phone"></i></div>
+        <div class="footer-contact-text">
+          <strong>Phone</strong>
+          <a href="tel:+919892832309">+91 98928-32309</a>
+        </div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+        <div class="footer-contact-text">
+          <strong>Email</strong>
+          <a href="mailto:jayakarashetty04@gmail.com">jayakarashetty04@gmail.com</a>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copyright">© 2024 <span>Hindustan Hindu Hotel</span>. All Rights Reserved. Made with ❤️ in India.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+
+<button id="scrollTop" style="position:fixed;bottom:28px;right:28px;width:48px;height:48px;background:var(--gradient-gold);border:none;border-radius:50%;color:var(--text-dark);font-size:1.1rem;cursor:pointer;box-shadow:0 4px 20px rgba(212,175,55,0.4);opacity:0;transition:var(--transition);z-index:9998;"><i class="fas fa-arrow-up"></i></button>
+<script src="/script.js"></script>
+</body>
+</html>
